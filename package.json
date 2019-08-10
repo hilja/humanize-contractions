@@ -1,6 +1,6 @@
 {
   "name": "humanize-contractions",
-  "version": "0.0.1",
+  "version": "1.0.1",
   "description": "Tries to revive an apostropheless English language contraction",
   "main": "index.js",
   "repository": {
