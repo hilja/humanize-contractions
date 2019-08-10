@@ -1,0 +1,36 @@
+{
+  "name": "humanize-contractions",
+  "version": "0.0.1",
+  "description": "Tries to revive an apostropheless English language contraction",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hilja/humanize-contractions"
+  },
+  "scripts": {
+    "test": "jest spec.js --config=jest.config.js"
+  },
+  "keywords": [
+    "language",
+    "english",
+    "contractions"
+  ],
+  "author": "Antti Hilja",
+  "license": "ISC",
+  "devDependencies": {
+    "clean-slate-lint": "^1.0.9",
+    "jest": "^24.8.0"
+  },
+  "eslintConfig": {
+    "env": {
+      "node": true,
+      "jest": true
+    }
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "./node_modules/.bin/clean-slate-lint",
+      "pre-rewrite": "./node_modules/.bin/clean-slate-lint"
+    }
+  }
+}
